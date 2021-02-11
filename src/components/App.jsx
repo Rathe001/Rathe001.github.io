@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div className={classes.hello}>
       {projects.map((project) => (
-        <div><a href="/{project}">{project}</a></div>
+        <div><a href={`/${project}`}>{project}</a></div>
       ))}
     </div>
   );
