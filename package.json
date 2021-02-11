@@ -17,6 +17,7 @@
     "websocket": "^1.0.33"
   },
   "scripts": {
+    "publishMe": "git subtree push --prefix build origin gh-pages",
     "server": "node -r esm ./api/server.js",
     "start": "npm run server",
     "build": "react-scripts build",
