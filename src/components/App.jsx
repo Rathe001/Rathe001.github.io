@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { createUseStyles } from 'react-jss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from 'react-router-dom';
 
 const useStyles = createUseStyles({
   '@global': {},
@@ -11,10 +17,6 @@ const App = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([]);
   const [error, setError] = useState([]);
-
-  function openProject(project) {
-    window.location = `https://astigmapro.com/${project}`;
-  }
 
   useEffect(() => {
     axios.get('https://api.github.com/users/Rathe001/repos')
@@ -30,19 +32,29 @@ const App = () => {
   }, []);
 
   return (
-    <div className={classes.hello}>
-      {error && (<div>{error}</div>)}
-      {projects.map((project) => (
-        <div>
-          <button
-            type="button"
-            onClick={() => openProject(project)}
-          >
-            {project}
-          </button>
-        </div>
-      ))}
-    </div>
+    <Router>
+      <div className={classes.hello}>
+        {error && (<div>{error}</div>)}
+        <ul>
+          {projects.map((project) => (
+            <li>
+              <Link to={`/${project}`}>{project}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Switch>
+        {projects.map((project) => (
+          <Route
+            path="/privacy-policy"
+            component={() => {
+              window.location.href = `https://astigmapro.com.com/${project}`;
+              return null;
+            }}
+          />
+        ))}
+      </Switch>
+    </Router>
   );
 };
 
