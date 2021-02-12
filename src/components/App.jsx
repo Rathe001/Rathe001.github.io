@@ -1,12 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { createUseStyles } from 'react-jss';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from 'react-router-dom';
 
 const useStyles = createUseStyles({
   '@global': {},
@@ -32,29 +26,22 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <div className={classes.hello}>
-        {error && (<div>{error}</div>)}
-        <ul>
-          {projects.map((project) => (
-            <li>
-              <Link to={`/${project}`}>{project}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <Switch>
+    <div className={classes.hello}>
+      {error && (<div>{error}</div>)}
+      <ul>
         {projects.map((project) => (
-          <Route
-            path="/privacy-policy"
-            component={() => {
-              window.location.href = `https://astigmapro.com.com/${project}`;
-              return null;
-            }}
-          />
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://astigmapro.com/${project}`}
+            >
+              {project}
+            </a>
+          </li>
         ))}
-      </Switch>
-    </Router>
+      </ul>
+    </div>
   );
 };
 
