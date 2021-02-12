@@ -25,7 +25,7 @@ const App = () => {
         setProjects(pages);
       })
       .catch((err) => {
-        setError(err.response.message);
+        setError(err.response.data.message);
       });
   }, []);
 
