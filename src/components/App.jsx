@@ -12,7 +12,7 @@ const App = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get('https://rathe001-github.herokuapp.com/api/projects').then((rs) => {
+    axios.get('https://api.astigmapro.com/projects').then((rs) => {
       console.log(rs);
       setProjects(rs.data);
     });

@@ -6,6 +6,6 @@ const getDirectories = (srcPath) => readdirSync(srcPath)
 
 export default (app) => {
   app.get('/projects', (req, res) => {
-    res.json(getDirectories('./projects'));
+    res.json(getDirectories('./public/projects'));
   });
 };
