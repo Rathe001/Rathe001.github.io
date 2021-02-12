@@ -10,9 +10,10 @@ const useStyles = createUseStyles({
 const App = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([]);
+  const [error, setError] = useState([]);
 
   function openProject(project) {
-    window.location.href = `https://astigmapro.com/${project}`;
+    window.location = `https://astigmapro.com/${project}`;
   }
 
   useEffect(() => {
@@ -22,11 +23,15 @@ const App = () => {
         .map((repo) => repo.name))
       .then((pages) => {
         setProjects(pages);
+      })
+      .catch((err) => {
+        setError(err.data.message);
       });
   }, []);
 
   return (
     <div className={classes.hello}>
+      {error && (<div>{error}</div>)}
       {projects.map((project) => (
         <div>
           <button
