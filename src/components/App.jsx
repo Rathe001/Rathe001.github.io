@@ -31,7 +31,7 @@ const App = () => {
         <div>
           <button
             type="button"
-            onClick={openProject(project)}
+            onClick={() => openProject(project)}
           >
             {project}
           </button>
