@@ -2,15 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import projects from './projects';
 
-const router = express.Router();
-
 const app = express();
 
-projects(router);
+projects(app);
 
 app.use(cors());
-app.use('/api', router);
-
 app.listen(process.env.PORT || 3001, () => {
   console.log(`Server running on port ${process.env.PORT || 3001}`);
 });
