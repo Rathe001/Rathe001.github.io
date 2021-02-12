@@ -1,9 +1,9 @@
 import express from 'express';
-import createPagesRoutes from './routes/pages';
+import createFooRoutes from './routes/foo';
 
 const app = express();
 
-createPagesRoutes(app);
+createFooRoutes(app);
 
 app.listen(process.env.PORT || 3001, () => {
   console.log(`Server running on port ${process.env.PORT || 3001}`);

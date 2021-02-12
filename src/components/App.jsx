@@ -12,9 +12,8 @@ const App = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get('https://api.astigmapro.com/projects').then((rs) => {
-      console.log(rs);
-      setProjects(rs.data);
+    axios.get('https://api.github.com/users/Rathe001/repos').then((rs) => rs.data.filter((repo) => repo.has_pages).map((repo) => repo.name)).then((pages) => {
+      setProjects(pages);
     });
   }, []);
 
