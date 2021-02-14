@@ -84,6 +84,7 @@ const useStyles = createUseStyles({
       background: '#000',
     },
     display: 'block',
+    fontSize: 13,
     marginBottom: 0,
     paddingLeft: 40,
     position: 'relative',
