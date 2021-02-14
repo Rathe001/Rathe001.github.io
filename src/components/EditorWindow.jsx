@@ -28,6 +28,9 @@ const useStyles = createUseStyles({
     fontSize: '13px !important',
     padding: 20,
   },
+  gray: {
+    color: '#637777',
+  },
   green: {
     '&:hover': {
       textDecoration: 'underline',
@@ -145,7 +148,7 @@ const App = () => {
             <span className={classes.line}>{' * @param {string} logoBase64'}</span>
             <span className={classes.line}>{' * @example'}</span>
             {atob(logoBase64).split(/\r?\n/).map((line) => (
-              <span className={classes.line}>{` * ${line}`}</span>
+              <span className={classes.line}><span className={classes.gray}>{` * ${line}`}</span></span>
             ))}
             <span className={classes.line}>{' */'}</span>
           </div>
@@ -240,7 +243,9 @@ const App = () => {
                           .filter((line) => !!line)
                           .map((descLine) => (
                             <span className={classes.line}>
-                              {descLine.trim()}
+                              <span className={classes.white}>
+                                {descLine.trim()}
+                              </span>
                             </span>
                           ))}
                       </div>

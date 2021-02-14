@@ -34,6 +34,9 @@ const useStyles = createUseStyles({
       paddingLeft: 14,
       position: 'relative',
     },
+    '& small': {
+      opacity: 0.5,
+    },
     '& span': {
       marginBottom: 0,
     },
