@@ -12,11 +12,8 @@ const useStyles = createUseStyles({
     color: '#82AAFF',
   },
   comment: {
-    '& a': {
-      color: '#637777',
-    },
     color: '#637777',
-    // fontSize: 14,
+    fontSize: 13,
   },
   cyan: {
     color: '#7fdbca',
@@ -103,6 +100,9 @@ const useStyles = createUseStyles({
   red: {
     color: '#ff5874',
   },
+  white: {
+    color: '#fff',
+  },
   yellow: {
     color: '#ffcb8b',
   },
@@ -134,7 +134,7 @@ const App = () => {
           <span className={classes.purple}>const </span>
           <span className={classes.blue}>Website</span>
           <span className={classes.purple}> = </span>
-          (classes, logoBase64, projects)
+          <span className={classes.white}>(classes, logoBase64, projects)</span>
           <span className={classes.purple}>{' => {'}</span>
         </span>
 
@@ -152,10 +152,10 @@ const App = () => {
             <span className={classes.purple}>const </span>
             <span className={classes.blue}>showAsciiLogo</span>
             <span className={classes.purple}> = </span>
-            (logoBase64)
+            <span className={classes.white}>(logoBase64)</span>
             <span className={classes.purple}>{' => '}</span>
             <span className={classes.blue}>atob</span>
-            (logoBase64)
+            <span className={classes.white}>(logoBase64)</span>
             <span className={classes.purple}>;</span>
           </span>
 
@@ -163,7 +163,7 @@ const App = () => {
 
           <span className={classes.line}>
             <span className={classes.purple}>return </span>
-            (
+            <span className={classes.white}>(</span>
           </span>
 
           <div className={classes.indent2}>
@@ -181,14 +181,14 @@ const App = () => {
                 <span className={classes.cyan}>{'<h1>'}</span>
                 <span className={classes.red}>{'{'}</span>
                 <span className={classes.blue}>showAsciiLogo</span>
-                (astigmaproLogo)
+                <span className={classes.white}>(astigmaproLogo)</span>
                 <span className={classes.red}>{'}'}</span>
                 <span className={classes.cyan}>{'</h1>'}</span>
               </span>
 
               <span className={classes.line}>
                 <span className={classes.cyan}>{'<h2>'}</span>
-                List of Projects
+                <span className={classes.white}>List of Projects</span>
                 <span className={classes.cyan}>{'</h2>'}</span>
               </span>
 
@@ -265,7 +265,7 @@ const App = () => {
           </div>
 
           <span className={classes.line}>
-            )
+            <span className={classes.white}>)</span>
             <span className={classes.purple}>;</span>
           </span>
         </div>
@@ -278,7 +278,7 @@ const App = () => {
 
       <span className={classes.line}>
         <span className={classes.purple}>export default </span>
-        Website;
+        <span className={classes.white}>Website;</span>
       </span>
 
       <span className={classes.line}>&nbsp;</span>
