@@ -27,7 +27,7 @@ const useStyles = createUseStyles({
     },
     color: '#f2f2f2',
     flex: 1,
-    fontSize: 13,
+    fontSize: '13px !important',
     padding: 20,
   },
   green: {
