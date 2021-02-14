@@ -68,6 +68,9 @@ const useStyles = createUseStyles({
     },
   },
   line: {
+    '& a': {
+      fontSize: 13,
+    },
     '&::before': {
       content: 'counter(line-numbering)',
       counterIncrement: 'line-numbering',
