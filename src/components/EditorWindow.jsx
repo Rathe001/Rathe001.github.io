@@ -23,6 +23,7 @@ const useStyles = createUseStyles({
   },
   editorWindow: {
     '& span': {
+      fontSize: '13px !important',
       marginBottom: 0,
     },
     color: '#f2f2f2',
@@ -75,6 +76,7 @@ const useStyles = createUseStyles({
       paddingRight: '1em',
       position: 'absolute',
       textAlign: 'right',
+      whiteSpace: 'nowrap',
       width: '1.5em',
     },
     '&:hover': {
