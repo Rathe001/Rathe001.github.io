@@ -141,7 +141,7 @@ const App = () => {
           <span className={classes.purple}>const </span>
           <span className={classes.blue}>Website</span>
           <span className={classes.purple}> = </span>
-          <span className={classes.white}>(classes, logoBase64, projects)</span>
+          <span className={classes.white}>(classes, astigmaproLogo, projects)</span>
           <span className={classes.purple}>{' => {'}</span>
         </span>
 
@@ -224,7 +224,7 @@ const App = () => {
                       <span className={classes.line}>
                         <span className={classes.cyan}>{'<h3>'}</span>
                         <span className={classes.red}>{'{'}</span>
-                        <span className={classes.green}>projects.</span>
+                        <span className={classes.green}>projects[&apos;</span>
                         <a
                           className={classes.cyan}
                           target="_blank"
@@ -233,6 +233,7 @@ const App = () => {
                         >
                           {project.name}
                         </a>
+                        <span className={classes.green}>&apos;]</span>
                         <span className={classes.red}>{'}'}</span>
                         <span className={classes.cyan}>{'</h3>'}</span>
                       </span>
