@@ -23,7 +23,7 @@
     "ui": "react-scripts start",
     "server": "node -r esm ./api/server.js",
     "start": "npm run server",
-    "build": "react-scripts build && node -r esm ./utils/copyCNAME.js",
+    "build": "react-scripts build && node -r esm ./utils/copyCNAME.js && node -r esm ./utils/copyPrivacy.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
