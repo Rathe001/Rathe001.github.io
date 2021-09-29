@@ -43,9 +43,13 @@ const useStyles = createUseStyles({
     '& ul': {
       marginLeft: 0,
     },
+    background: '#001122',
     fontSize: 14,
+    left: 0,
     minWidth: 200,
     padding: 20,
+    position: 'fixed',
+    top: 0,
   },
   title: {
     fontSize: 11,

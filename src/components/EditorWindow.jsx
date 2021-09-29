@@ -5,6 +5,11 @@ import logoBase64 from 'constants/logoBase64';
 import TerminalWindow from 'components/TerminalWindow';
 
 const useStyles = createUseStyles({
+  '@media (max-width: 1000px)': {
+    editorWindow: {
+      padding: '0 !important',
+    },
+  },
   blue: {
     '&:hover': {
       textDecoration: 'underline',
@@ -26,7 +31,7 @@ const useStyles = createUseStyles({
     color: '#f2f2f2',
     flex: 1,
     fontSize: '13px !important',
-    padding: 20,
+    padding: '20px 20px 225px 240px',
   },
   gray: {
     color: '#637777',
