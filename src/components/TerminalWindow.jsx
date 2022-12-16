@@ -34,7 +34,7 @@ const TerminalWindow = () => {
       <p className={classes.green}>Compiled successfully!</p>
       <p>
         You can now view
-        <strong> astigmapro </strong>
+        <strong> tummel.io </strong>
         in the browser.
       </p>
       <p>
@@ -44,7 +44,7 @@ const TerminalWindow = () => {
         <br />
         &nbsp;&nbsp;
         <strong>On Your Network</strong>
-        :  http://astigmapro.com
+        :  http://tummel.io
       </p>
       <p>
         Note that the development build is not optimized.

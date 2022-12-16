@@ -70,7 +70,7 @@ const SideBar = () => {
           <small className={classes.path}>src/components/App</small>
         </li>
       </ul>
-      <span className={classes.title}>Astigmapro.com</span>
+      <span className={classes.title}>Tummel.io</span>
       <ul>
         <li className={classes.closed}><span>build</span></li>
         <li className={classes.closed}><span>node_modules</span></li>

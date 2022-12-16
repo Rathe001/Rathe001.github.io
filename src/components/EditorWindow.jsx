@@ -234,7 +234,7 @@ const App = () => {
                           className={classes.cyan}
                           target="_blank"
                           rel="noopener noreferrer"
-                          href={`http://www.astigmapro.com/${project.name}/`}
+                          href={`http://tummel.io/${project.name}/`}
                         >
                           {project.name}
                         </a>
