@@ -161,14 +161,13 @@ const App = () => {
           <span className={classes.line}>
             <span className={classes.cyan}>{'</div>'}</span>
           </span>
-
-          <span className={classes.line}>
-            <span className={classes.white}>)</span>
-            <span className={classes.purple}>;</span>
-          </span>
         </div>
       </div>
 
+      <span className={classes.line}>
+        <span className={classes.white}>)</span>
+        <span className={classes.purple}>;</span>
+      </span>
       <span className={classes.line}>&nbsp;</span>
 
       <span className={classes.line}>
