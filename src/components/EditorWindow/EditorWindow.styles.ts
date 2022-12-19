@@ -14,7 +14,7 @@ const styles = {
   },
   comment: {
     color: '#637777',
-    fontSize: 13,
+    lineHeight: '1em',
   },
   cyan: {
     color: '#7fdbca',
@@ -70,7 +70,11 @@ const styles = {
   },
   line: {
     '& a': {
-      fontSize: 13,
+      '&:hover': {
+        textDecoration: 'underline',
+      },
+      fontWeight: 700,
+      textDecoration: 'none',
     },
     '&::before': {
       content: 'counter(line-numbering)',
@@ -88,7 +92,7 @@ const styles = {
         color: '#fff',
         opacity: 1,
       },
-      background: '#000',
+      background: 'rgba(0, 0, 0, 0.2)',
     },
     display: 'block',
     fontSize: 13,
@@ -101,6 +105,9 @@ const styles = {
     counterReset: 'line-numbering',
     whiteSpace: 'pre',
     wordBreak: 'break-word',
+  },
+  link: {
+    textTransform: 'capitalize',
   },
   purple: {
     color: '#C792EA',

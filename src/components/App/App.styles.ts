@@ -9,7 +9,7 @@ const styles = {
   pageWrap: {
     color: '#8BADC1',
     display: 'flex',
-    fontFamily: '"Fira Code", monaco, Consolas, "Lucida Console", monospace',
+    fontFamily: 'monospace',
   },
 };
 

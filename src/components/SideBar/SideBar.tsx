@@ -8,7 +8,7 @@ const SideBar = () => {
       <span className={classes.title}>Open Editors</span>
       <ul>
         <li>
-          <span>App.jsx</span>
+          <span>App.tsx</span>
           <small className={classes.path}>src/components/App</small>
         </li>
       </ul>
@@ -39,10 +39,8 @@ const SideBar = () => {
                   </span>
                   <ul>
                     <li className={classes.selected}>
-                      <strong>Website.jsx</strong>
+                      <strong>App.tsx</strong>
                     </li>
-                    <li>Website.styles.js</li>
-                    <li>Website.spec.jsx</li>
                   </ul>
                 </li>
               </ul>
